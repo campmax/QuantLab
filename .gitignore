@@ -1,0 +1,9 @@
+build/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+*.obj
+*.exe
+.vs/

@@ -1,0 +1,25 @@
+QuantLab 1.0
+source=SYNTHETIC FIXTURE - NOT SPY
+synthetic=1
+phase=development
+rows=5478
+canonical_data_fnv1a64=87932602c02b4f64
+first_data_date=2005-01-03
+last_data_date=2025-12-31
+evaluation_start=2005-10-10
+evaluation_end=2019-12-05
+holdout_start=2019-12-06
+initial=100000
+allocation=1
+fee=1
+slippage_bps=5
+cash_rate=0
+risk_free=0
+trend_window=200
+mean_window=20
+entry_z=-2
+max_hold=5
+whole_shares=0
+terminal_liquidation=false
+dividends=ex_date_cash_not_automatically_reinvested
+orders=prior_close_signal_next_open
