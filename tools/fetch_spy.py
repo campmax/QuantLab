@@ -1,11 +1,11 @@
-"""Download daily SPY data for personal research; never writes over an existing file.
+pass                                                                                 
 
-Optional dependency: python -m pip install yfinance
-The backtesting engine itself is entirely C++ and has no external dependencies.
-Yahoo OHLC is split-adjusted even with auto_adjust=False. This deliberately
-SPY-only importer rejects ANY split in the returned full history, so it cannot
-silently mix adjusted prices with explicit share multipliers.
-"""
+                                                   
+                                                                               
+                                                                           
+                                                                              
+                                                             
+   
 import argparse
 import csv
 from datetime import date, datetime, timezone
