@@ -1,4 +1,3 @@
-pass                                                                               
 import argparse
 import csv
 import importlib.util
@@ -73,7 +72,7 @@ def main():
             bad = temp / f"bad_{kind}.csv"; bad.write_text("\n".join(changed))
             run("--data", bad, "--out", temp / ("output_" + kind), ok=False)
         check(True, "CSV schema duplicate nonfinite trailing-field and date errors reject")
-                                                                                
+
         bom = temp / "bom.csv"
         bom.write_bytes(b"\xef\xbb\xbf" + ("\r\n".join(lines) + "\r\n").encode())
         run("--data", bom, "--out", temp / "bom_run")
@@ -93,7 +92,7 @@ def main():
                   "evaluation_end=2020-12-31" in f.read_text() for f in manifests),
               "all sensitivity trials use identical evaluation dates")
 
-                                                                                 
+
     spec = importlib.util.spec_from_file_location("fetch_spy", root / "tools/fetch_spy.py")
     module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
 

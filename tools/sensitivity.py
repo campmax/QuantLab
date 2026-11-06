@@ -1,6 +1,5 @@
-pass                                                                        
-                                                                        
-   
+
+
 import argparse
 import csv
 import hashlib
@@ -20,8 +19,7 @@ def main():
     a.out.mkdir(parents=True, exist_ok=False)
     plan = {"trend_windows": [100, 150, 200, 250, 300], "slippage_bps": [1, 5, 10, 20],
             "start_date": a.start_date, "holdout_date": a.holdout_date, "phase": "development",
-            "data_sha256": hashlib.sha256(a.data.read_bytes()).hexdigest(),
-            "note": "20 planned trials; do not treat the best result as independent evidence."}
+            "data_sha256": hashlib.sha256(a.data.read_bytes()).hexdigest()}
     (a.out / "experiment_plan.json").write_text(json.dumps(plan, indent=2), encoding="utf-8")
     rows = []
     for window in plan["trend_windows"]:
